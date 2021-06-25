@@ -1,0 +1,72 @@
+@use 'partials/variables' as v;
+@use 'partials/mixin' as m;
+@use 'sass:map';
+
+/* @include m.choose-color(); */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: map.get(v.$colors, 'lion-1');
+  color: map.get(v.$colors, 'lobster');
+}
+
+nav .container {
+  .navbar-brand {
+    color: map.get(v.$colors, 'lizard-1');
+    font-size: 32px;
+    font-weight: 500;
+    transition: .5s;
+    
+    &:hover {
+      color: map.get(v.$colors, 'lizard');
+    }
+    
+    &:active {
+      color: map.get(v.$colors, 'lizard-1');
+    }
+  }
+}
+
+.card-blog, .error_message {
+  padding: 15px 20px;
+  width: 94%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px #000;
+  transition: .5s;
+  border-bottom: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.card-blog {
+  &:hover {
+    border-bottom-color: map.get(v.$colors, 'leopard');
+  }
+  
+  a, a:hover, a:active {
+    text-decoration: none;
+    
+    p {
+      color: map.get(v.$colors, 'lobster');
+      display: inline-block;
+    }
+  }
+  
+  .blog-title {
+    color: map.get(v.$colors, 'leopard');
+    font-size: 20px;
+  }
+}
+
+.error_message {
+  &:hover {
+    border-bottom-color: #ff4136;
+  }
+}
+                                                                                                                                                                                

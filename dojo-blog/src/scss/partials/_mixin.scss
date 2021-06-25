@@ -1,0 +1,34 @@
+@use 'variables' as v;
+@use 'sass:map';
+
+@mixin choose-color() {
+  @each $name, $color in v.$colors {
+    .text-#{$name} {
+      color: $color;
+      
+      &.text-link {
+        color: $color;
+        // transition: property | duration | timing | delay;
+        transition: all .3s ease;
+        
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+    
+    .bg-#{$name} {
+      background: $color;
+      
+      &.bg-link {
+        background: $color;
+        transition: all .3s ease;
+        
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+                                                                                                                                                                                                                                                                                                            

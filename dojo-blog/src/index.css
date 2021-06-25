@@ -1,0 +1,56 @@
+/* @include m.choose-color(); */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: #1e272e;
+  color: #d2dae2;
+}
+
+nav .container .navbar-brand {
+  color: #ff3f34;
+  font-size: 32px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+nav .container .navbar-brand:hover {
+  color: #ff5e57;
+}
+nav .container .navbar-brand:active {
+  color: #ff3f34;
+}
+
+.card-blog, .error_message {
+  padding: 15px 20px;
+  width: 94%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px #000;
+  transition: 0.5s;
+  border-bottom: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.card-blog:hover {
+  border-bottom-color: #ffc048;
+}
+.card-blog a, .card-blog a:hover, .card-blog a:active {
+  text-decoration: none;
+}
+.card-blog a p, .card-blog a:hover p, .card-blog a:active p {
+  color: #d2dae2;
+  display: inline-block;
+}
+.card-blog .blog-title {
+  color: #ffc048;
+  font-size: 20px;
+}
+
+.error_message:hover {
+  border-bottom-color: #ff4136;
+}
+
+/*# sourceMappingURL=index.css.map */
